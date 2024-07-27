@@ -1,0 +1,25 @@
+
+# LMS - Leads
+
+spring:
+  application:
+    name: LeadsAPI
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/cms_db
+    username: root
+    password: MySQL@07
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+   #JPA Properties
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        
+server:
+   port: 9092
+
